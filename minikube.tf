@@ -5,8 +5,7 @@ module "minikube" {
   cluster_name  = "roboshop"
   aws_instance_type = "c7i-flex.large"
   ssh_public_key = "~/.ssh/terraform.pub"
-  aws_subnet_id = "subnet-025a42d1df3caf1b6" #replace your default subnet id
-  # by default centos7 will be used
+  aws_subnet_id = 	"subnet-025a42d1df3caf1b6" #replace your default subnet id  by default centos7 will be used
   #ami_image_id = "ami-b81dbfc5"
   hosted_zone = "devops5.shop"
   hosted_zone_private = false
